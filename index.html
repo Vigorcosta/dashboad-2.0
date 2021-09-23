@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Simple Sidebar - Start Bootstrap Template 1.0</title>
+
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+<!-- Biblioteca-->
+<link rel="stylesheet" href="custom/bootstrap.min.css">
+<script src="custom/bootstrap.min.js"></script>
+</head>
+
+<body>
+        
+		
+<div class="d-flex" id="wrapper">
+
+<!-- Sidebar-->
+<div class="bg-primary" id="sidebar-wrapper">
+                
+				<!-- Tilulo de Menu Lateral-->
+				<div class="sidebar-heading bg-primary bg-gradient text-center text-white">Administrador</div>
+                
+				<!-- Menu Lateral-->			
+				<div class="list-group list-group-flush">
+                    
+					<a class="list-group-item p-3 menu" data-bs-toggle="modal" data-bs-target="#mperfil" href="#perfil" >Perfil</a>
+                    <a class="list-group-item p-3 menu" href="#!">Agenda</a>
+                    <a class="list-group-item p-3 menu" href="#!">Provas</a>
+                    <a class="list-group-item p-3 menu" href="#!">Teste</a>
+                    <a class="list-group-item p-3 menu" href="#!">Resultado</a>
+                    <a class="list-group-item p-3 menu" href="#!">Remarcar</a>
+                </div>
+	
+	
+	
+</div>
+	
+	
+<div id="page-content-wrapper">
+
+<!--Navegador-->
+	
+<nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient ">
+
+<!--Botão Esconder-->	
+<div class="container-fluid">
+                        
+	<button class="btn btn-primary" id="sidebarToggle">&#8647; Esconder</button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+	
+	
+	
+<!--Menu de opção-->   
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+			 
+                       <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opção</a>
+                       
+					   <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                       
+						<a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mperfil" href="#!">Perfil</a>
+                       
+						
+						<a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#altsenha" href="#!">Senha</a>
+                       
+						   <div class="dropdown-divider"></div>
+                       <a class="dropdown-item" href="#!">Sair</a>
+                       </div>
+                       
+			 		   </li>
+         </ul>
+</div>
+
+</div>
+</nav>
+                
+	
+<!-- SISTEMA DE BUSCA-->
+	
+<div class="container-fluid">
+
+<div class="d-flex justify-content-end mt-2 mb-2">
+
+<!-- SISTEMA DE HORA-->	
+<p class="col align-self-center me-4 fw-bold" id="data-hora"></p>
+
+
+<div class="input-group esp">
+  <input type="text" class="form-control" placeholder="Pesquisa" aria-label="Pesquisa" aria-describedby="button-addon2">
+  <button class="btn btn-primary bg-gradient" type="button" id="button-addon2">Buscar</button>
+</div>	
+	
+</div>	
+	
+	
+</div>	
+
+<!-- Página-->
+	
+<div class="container-fluid">
+	
+<!-- RECADOS-->
+<div>	
+<div class="card text-white bg-primary mb-3">
+  	<div class="card-header">Recado:</div>
+  	<div class="card-body">
+    <h5 class="card-title">Aviso de mensagem</h5>
+    <p class="card-text">Um pequeno pensamento positivo pela manhã pode mudar todo o seu dia.</p>
+  	</div>
+</div>		
+</div>
+
+<!-- CARTÕES-->	
+	
+<div class="row">
+    <div class="col">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  	<div class="card-header">Plano A</div>
+  	<div class="card-body">
+    <h5 class="card-title">Titulo</h5>
+    <p class="card-text">Que os dias ruins se tornem raros e os bons virem rotina.</p>
+  	</div>
+	</div>	
+    </div>
+    
+	<div class="col">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  	<div class="card-header">Plano B</div>
+  	<div class="card-body">
+    <h5 class="card-title">Titulo</h5>
+    <p class="card-text">Que os dias ruins se tornem raros e os bons virem rotina.</p>
+  	</div>
+	</div>	
+    </div>
+    
+	<div class="col">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  	<div class="card-header">Plano C</div>
+  	<div class="card-body">
+    <h5 class="card-title">Titulo</h5>
+    <p class="card-text">Que os dias ruins se tornem raros e os bons virem rotina.</p>
+  	</div>
+	</div>	
+    </div>
+	
+	<div class="col">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  	<div class="card-header">Plano D</div>
+  	<div class="card-body">
+    <h5 class="card-title">Titulo</h5>
+    <p class="card-text">Que os dias ruins se tornem raros e os bons virem rotina.</p>
+  	</div>
+	</div>	
+    </div>
+</div>
+	
+<!-- CARTÔES B-->
+	
+<div class="row">
+    <div class="col">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  	<div class="card-header">1 Ordem</div>
+  	<div class="card-body">
+    <h5 class="card-title">Titulo</h5>
+    <p class="card-text">Que os dias ruins se tornem raros e os bons virem rotina.</p>
+  	</div>
+	</div>	
+    </div>
+    
+	<div class="col">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  	<div class="card-header">1 Ordem</div>
+  	<div class="card-body">
+    <h5 class="card-title">Titulo</h5>
+    <p class="card-text">Que os dias ruins se tornem raros e os bons virem rotina.</p>
+  	</div>
+	</div>	
+    </div>
+    
+	<div class="col">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  	<div class="card-header">1 Ordem</div>
+  	<div class="card-body">
+    <h5 class="card-title">Titulo</h5>
+    <p class="card-text">Que os dias ruins se tornem raros e os bons virem rotina.</p>
+  	</div>
+	</div>	
+    </div>
+	
+	<div class="col">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  	<div class="card-header">1 Ordem</div>
+  	<div class="card-body">
+    <h5 class="card-title">Titulo</h5>
+    <p class="card-text">Que os dias ruins se tornem raros e os bons virem rotina.</p>
+  	</div>
+	</div>	
+    </div>
+</div>	
+	
+	
+	
+</div>
+	
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+<!-- ///////////////////////////// MODAL //////////////////////////////////-->
+
+
+<!-- Alterar senha-->
+
+<div class="modal fade" id="altsenha" 
+tabindex="-1" aria-labelledby="exampleModalLabel" 
+aria-hidden="true">
+
+<div class="modal-dialog border border-3 border-primary">
+	
+<div class="modal-content border-0">
+
+<!--Barra de Titulo-->
+<div class="modal-header bg-primary bg-gradient"> 
+
+<h5 class="modal-title">
+
+Alterar senha! <!--Nome de Titulo-->   
+
+</h5>
+	
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+</button>
+	
+</div>
+
+<!--CONTEUDO--> 
+<div class="modal-body">
+	
+<form method="post">
+  
+<div class="mb-3">
+<label for="exampleInputEmail1" class="form-label">Email:</label>
+<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+<div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com ninguém.</div>
+</div>
+  
+<div class="mb-3">
+<label for="exampleInputPassword1" class="form-label">Senha</label>
+<input type="password" class="form-control" id="senha">
+</div>
+
+<button type="submit" class="btn btn-primary">Alterar</button>
+</form>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+	
+Cancelar <!--Títuo de botão--> 
+
+</button>
+
+</div>
+
+</div></div></div>
+
+
+<!-- Perfil-->
+
+<div class="modal fade " id="mperfil" 
+tabindex="-1" aria-labelledby="exampleModalLabel" 
+aria-hidden="true">
+
+<div class="modal-dialog border border-3 border-primary">
+	
+<div class="modal-content border-0">
+
+<!--Barra de Titulo-->
+<div class="modal-header bg-primary bg-gradient"> 
+
+<h5 class="modal-title">Perfil</h5>
+	
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+</button>
+	
+</div>
+
+<!--CONTEUDO--> 
+<div class="modal-body">
+
+<form method="post">
+
+<div class="card mb-3 ">
+  <h5 class="card-header bg-primary bg-gradient text-white">Seu nome</h5>
+  <div class="card-body bg-white">
+    <h5 class="card-title">Informação sobre ti?</h5>
+    <p class="card-text">Coloque sua biografia, conte sua história?</p>
+    
+  </div>
+</div>	
+
+<div class="card">
+<h5 class="card-header bg-primary bg-gradient text-white">Contato:</h5>
+<div class="card-body bg-white">
+<h5 class="card-title">Email:</h5>
+<p class="card-text">contato@contato.com.br</p>
+<h5 class="card-title">Whatsapp ou Telegram:</h5>
+<p class="card-text">(53) 000-000-000</p>	
+</div>
+</div>
+	
+</form>	
+
+
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+	
+Cancelar <!--Títuo de botão--> 
+
+</button>
+
+</div>
+
+</div>
+</div>
+</div>	
+</div>
+
+<!-- FIM-->
+
+
+<style>
+.esp{width: 300px;}	
+.menu{background-color: #0d6efd; color: white; margin-left: 18px; /*margin-right: 18px;*/}	
+.menu:hover{background-color: white; color:black;}	
+
+/*Efeito Blur (fundo na tela)*/	
+body.modal-open > :not(.modal) {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+}	
+	
+	
+	
+	
+	
+	
+#wrapper {
+  /*overflow-x: hidden; */
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+
+</style>
+
+<script>
+	
+//Botão Esconder
+window.addEventListener('DOMContentLoaded', event => {
+
+    // Toggle the side navigation
+    const sidebarToggle = document.body.querySelector('#sidebarToggle');
+    if (sidebarToggle) {
+        // Uncomment Below to persist sidebar toggle between refreshes
+        // if (localStorage.getItem('sb|sidebar-toggle') === 'true') {
+        //     document.body.classList.toggle('sb-sidenav-toggled');
+        // }
+        sidebarToggle.addEventListener('click', event => {
+            event.preventDefault();
+            document.body.classList.toggle('sb-sidenav-toggled');
+            localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
+        });
+    }
+
+});
+
+//DATA
+// Função para formatar 1 em 01
+const zeroFill = n => {	return ('0' + n).slice(-2);	}
+
+// Cria intervalo
+const interval = setInterval(() => {// Pega o horário atual
+const now = new Date();
+
+// Formata a data conforme dd/mm/aaaa hh:ii:ss
+				const dataHora =
+				'Data: '+ zeroFill(now.getUTCDate()) + 
+				'/' + zeroFill((now.getMonth() + 1)) + 
+				'/' + now.getFullYear() + 
+				' Hora : ' + zeroFill(now.getHours()) + 
+				':' + zeroFill(now.getMinutes()) + 
+				':' + zeroFill(now.getSeconds());
+
+// Exibe na tela usando a div#data-hora
+document.getElementById('data-hora').innerHTML = dataHora;}, 1000);
+
+
+</script>
